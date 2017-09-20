@@ -1,0 +1,40 @@
+/*font-family: 'Scope One', serif;*/
+/*font-family: 'Trocchi', serif;*/
+
+.navEl{
+    text-align: center;
+    text-decoration: none;
+}
+
+.navEl a{
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Scope One', serif;
+
+}
+
+nav{
+    padding-top: 28px;
+}
+
+.fa-bars{
+        position: absolute;
+    right: 22px;
+}
+
+@media only screen and (max-width: 768px) {
+    .row {
+        display: none;
+    }
+    .fa-bars{
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    
+    .fa-bars{
+        display: none !important;
+    }
+}

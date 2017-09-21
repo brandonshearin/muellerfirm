@@ -1,26 +1,39 @@
 /*font-family: 'Scope One', serif;*/
 /*font-family: 'Trocchi', serif;*/
+/*font-family: 'Vesper Libre', serif;*/
 
+.fixNAVplz{
+    position: fixed;
+}
 .navEl{
     text-align: center;
     text-decoration: none;
 }
 
 .navEl a{
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 25px;
     font-family: 'Scope One', serif;
 
 }
 
+.navEl a:hover{
+     font-size: 30px;
+     -webkit-transition: 0.5s;
+     color: rgba(255,65,54, 0.7);
+}
+
 nav{
     padding-top: 28px;
+    height: 80px;
+    position: fixed;
 }
 
 .fa-bars{
-        position: absolute;
+        position: fixed;
     right: 22px;
+    color: white;
 }
 
 @media only screen and (max-width: 768px) {
@@ -37,4 +50,35 @@ nav{
     .fa-bars{
         display: none !important;
     }
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('/assets/raleigh2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(51, 51, 51, 0.55);
+    background-blend-mode: multiply;
+}
+
+h1{
+    flex-shrink: 4;
+    text-align: center;
+    font-family: 'Scope One', serif;
+    font-size: 10vw;
+    color: white;
+}
+
+p{
+    font-family: 'Vesper Libre', serif;
+    text-align: center;
+    line-height: 2em;
+    font-size: 1.7vw;
+    color: white;
 }

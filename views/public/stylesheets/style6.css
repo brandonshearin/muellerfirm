@@ -5,7 +5,7 @@
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: rgba(153,204,51,0.9);
+	background: rgba(0,0,0,0.9);
 }
 
 /* Overlay closing cross */
@@ -50,6 +50,10 @@
 	min-height: 54px;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
+	
+}
+.overlay ul li a:hover {
+     text-decoration: none;   
 }
 
 .overlay ul li a {
@@ -63,7 +67,9 @@
 
 .overlay ul li a:hover,
 .overlay ul li a:focus {
-	color: #f0f0f0;
+	    -webkit-transition: 0.5s;
+    color: rgba(255,65,54, 0.7);
+    font-size: 67px;
 }
 
 /* Effects */

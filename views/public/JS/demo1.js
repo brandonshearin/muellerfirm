@@ -11,8 +11,11 @@
 		},
 		transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
 		support = { transitions : Modernizr.csstransitions };
-
+$(".fa-bars").click(function(){
+    		$(".fa-bars").hide();
+		});
 	function toggleOverlay() {
+		$("body").scrollTop(0);
 		if( classie.has( overlay, 'open' ) ) {
 			classie.remove( overlay, 'open' );
 			classie.add( overlay, 'close' );
@@ -37,4 +40,10 @@
 
 	triggerBttn.addEventListener( 'click', toggleOverlay );
 	closeBttn.addEventListener( 'click', toggleOverlay );
+	
+	$(".overlay-close").click(function(){
+    $(".fa-bars").show();
+});
+    		
+		
 })();

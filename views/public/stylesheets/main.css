@@ -1,13 +1,21 @@
 /*font-family: 'Scope One', serif;*/
 /*font-family: 'Trocchi', serif;*/
 /*font-family: 'Vesper Libre', serif;*/
+.site{
+  /*  display: flex;*/
+  /*min-height: 100vh;*/
+  /*flex-direction: column;*/
+}
 
 .fixNAVplz{
     position: fixed;
+    height: 70px;
+    top: 0;
 }
 .navEl{
     text-align: center;
     text-decoration: none;
+    margin-top: 19px;
 }
 
 .navEl a{
@@ -21,23 +29,36 @@
 .navEl a:hover{
      font-size: 30px;
      -webkit-transition: 0.5s;
-     color: rgba(255,65,54, 0.7);
+     color: rgba(167,0,0, 1);
 }
 
 nav{
     padding-top: 28px;
     height: 80px;
     position: fixed;
+    z-index: 30;
 }
 
+
+.colorNav{
+    background-color: rgba(167,0,0,.85);
+    -webkit-transition: 0.5s;
+    
+}
 .fa-bars{
-        position: fixed;
-    right: 22px;
-    color: white;
+        color: white;
+    position: fixed;
+    right: 25px;
+    top: 14px;
+    z-index: 30;
+}
+
+.changeHamburger{
+    color: black;
 }
 
 @media only screen and (max-width: 768px) {
-    .row {
+    .rowNav {
         display: none;
     }
     .fa-bars{
@@ -52,6 +73,9 @@ nav{
     }
 }
 
+#welcome{
+    color: #A70000;
+}
 header{
     width: 100vw;
     height: 100vh;
@@ -67,7 +91,7 @@ header{
     background-blend-mode: multiply;
 }
 
-h1{
+#headerH1{
     flex-shrink: 4;
     text-align: center;
     font-family: 'Scope One', serif;
@@ -75,10 +99,181 @@ h1{
     color: white;
 }
 
-p{
+#headerP{
     font-family: 'Vesper Libre', serif;
     text-align: center;
     line-height: 2em;
     font-size: 1.7vw;
     color: white;
+}
+
+@media only screen and (max-width: 550px) {
+    #headerP{
+        font-size: 3.7vw;
+    }
+    #headerH1{
+        font-size: 15vw;
+    }
+}
+
+.fa-angle-double-down{
+  color: white;
+   
+    position: relative;
+    top: 20vh;  
+}
+
+.fa-angle-double-down:hover{
+    color: rgb(167,0,0);
+    font-size: 4em;
+    -webkit-transition: 0.5s;
+}
+
+#landingPageSection{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: center;
+    z-index: -4;
+    
+}
+
+#landingPageSection .container{
+        height: 100vh;
+    background: white;
+    position: relative;
+    top: -13px;
+    width: 90%;
+    
+}
+
+#frontpagetop{
+    padding-top: 50px;
+}
+
+#frontpagetop h1, .frontpageinfo h1{
+    text-align: center;
+    font-family: 'Scope One', serif;
+    font-size: 44px;
+}
+
+#frontpagetop p, .frontpageinfo p {
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: justify;
+    font-family: 'Vesper Libre', serif;
+    font-size: 16px;
+}
+
+.frontpageinfo #downloads{
+    color: rgb(167,0,0);
+    padding-left: 30px;
+    padding-right: 30px;
+    display: block;
+}
+
+@media screen and (max-width: 767px) {
+     #frontpagetop h1{
+        font-size: 25px;
+    }
+
+}
+
+#frontpagepad{
+    padding-top: 25px;
+}
+
+#nancysemail{
+    color: rgb(167,0,0);
+}
+
+footer {
+        display: flex;
+        flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  height: 100px;
+  width: 100%;
+  background-color: #333333;
+  background-image:
+    linear-gradient(
+      #333333, #555555
+    );
+}
+
+footer p{
+    text-align: center;
+    color: white;
+    font-family: 'Vesper Libre', serif;
+}
+
+@media screen and (max-width : 500px){
+     .yoyo{
+         height: 2000px !important;
+     }   
+}
+
+@media screen and (min-width : 501px) and (max-width : 800px){
+    .yoyo{
+         height: 1500px !important;
+     }   
+}
+@media screen and (min-width : 801px){
+     .yoyo{
+         height: 1000px !important;
+     }   
+}
+#frontpagetop1{
+    padding-top: 50px;
+}
+#frontpagetop, .frontpageinfo{
+	background: white;
+	display: inline;
+	float: left;
+	margin: 0 15px 30px;
+	padding: 10px 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+	-moz-box-shadow: 0 4px 6px rgba(0,0,0,.3);
+	box-shadow: 0 4px 6px rgba(0,0,0,.3);
+	-webkit-transition: all .15s linear;
+	-moz-transition: all .15s linear;
+	transition: all .15s linear;
+	z-index:0;
+        position:relative;
+}
+
+footer i {
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+.pary{
+    width: 100%;
+    min-height: 500px;
+    background: transparent;
+}
+
+#first{
+    background-color: blue;
+    min-height: 400px;
+}
+
+#second{
+    background: transparent;
+}
+
+.text{
+    height: 100px;
+    width: 100%;
+    background-color: blue;
+}
+
+.parallax-mirror {
+    z-index:1000
 }

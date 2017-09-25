@@ -21,5 +21,3 @@ $(function() {
         }
     });
 });
-
-$('.parallax-window').parallax({imageSrc: '/assets/raleigh2.jpg'});

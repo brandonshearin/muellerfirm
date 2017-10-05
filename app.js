@@ -15,6 +15,10 @@ app.get('/ourFirm', (req, res) =>{
     res.render('ourFirm');
 });
 
+app.get('/professionals', (req, res) =>{
+    res.render('professionals');
+});
+
 
 
 
